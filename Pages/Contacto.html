@@ -61,17 +61,27 @@
                 <p></p>
 
                 <form class="Contacto_formulario main_contacto">
-                    <Div class="Contacto_formulario_namebox">Nombre</Div>
-                    <input class="Contacto_formulario_box" type="text" placeholder="Nombre"><p></p>
-                    <div class="Contacto_formulario_namebox">Apellido</div>
-                    <input class="Contacto_formulario_box" type="text" placeholder="Apellido"><p></p>
-                    <div class="Contacto_formulario_namebox">Celular</div>
-                    <input class="Contacto_formulario_box" type="tel" placeholder="Celular"><p></p>
-                    <div class="Contacto_formulario_namebox">Mail</div>
-                    <input class="Contacto_formulario_box" type="email" placeholder="E-mail"><p></p>
-                    <div class="Contacto_formulario_namebox">Mensaje</div>
-                    <textarea class="Contacto_formulario_box" name="Mensaje" id="" cols="50" rows="10" placeholder="Mensaje"></textarea><p></p>
-                
+
+                    <div class="input-group Contacto_formulario_namebox">
+                        <span class="input-group-text">Nombre y Apellido</span>
+                        <input type="text" aria-label="Nombre y Apellido" class="form-control Contacto_formulario_box">
+                    </div>
+
+                    <div class="input-group Contacto_formulario_namebox">
+                        <span class="input-group-text">Celular</span>
+                        <input type="text" aria-label="Celular" class="form-control Contacto_formulario_box">
+                    </div>
+
+                    <div class="input-group flex-nowrap Contacto_formulario_namebox">
+                        <span class="input-group-text" id="addon-wrapping">@</span>
+                        <input type="text" class="form-control Contacto_formulario_box" placeholder="Mail" aria-label="Mail" aria-describedby="addon-wrapping">
+                    </div>
+
+                    <div class="mb-3 Contacto_formulario_namebox">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control Contacto_formulario_box" id="exampleFormControlTextarea1" rows="10" cols="75"></textarea>
+                    </div>
+
                     <div class="Contacto_boton">
                         <input  class="boton" type="submit" value="Enviar">
                         <input  class="boton" type="reset" value="Limpiar">
